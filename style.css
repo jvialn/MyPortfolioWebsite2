@@ -89,8 +89,8 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
-  opacity: 80%;
+  background:rgb(237, 237, 237,.1);
+  backdrop-filter: blur(10px);
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -500,7 +500,17 @@ footer p {
   text-align: center;
 }
 
-
 .personal-info{
   margin-bottom: 2rem;
+}
+
+.contact-info-container .highlight{
+  background: left / 0% 100% no-repeat
+  linear-gradient(#c1f5ee, #c1f5ee);
+  transition: background-size 500ms;
+}
+
+.contact-info-container .highlight:hover{
+  background: left / 100% 100% no-repeat
+  linear-gradient(#c1f5ee, #c1f5ee);
 }
