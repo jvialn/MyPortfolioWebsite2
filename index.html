@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <i class="fa-solid fa-a">JP</i>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <i class="fa-solid fa-a">JP</i>
+    </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/edited3.png" alt="Jovi Allen's Profile Picture" class="mainpic"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jovi Allen Pabiton</h1>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Pabiton_JA_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/facebook.png"
+            alt="Facebook profile"
+            class="icon-link"
+            onclick="location.href='https://www.facebook.com/joviallen.pabiton.9'"
+          />
+          <img
+            src="./assets/instagram.png"
+            alt="Instagram profile"
+            class="icon-link"
+            onclick="location.href='https://www.instagram.com/jvialn/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="Instagram profile"
+            class="icon-link"
+            onclick="location.href='https://github.com/jvialn'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/megradbarongcrop2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/archive.png" alt="Personal Info icon" class="icon">
+                        <h2 class="personal-info">Personal Informations</h2>
+              <div class="article-container">
+                <article>
+                    <h4>Birthday:</h4>
+                    <div>
+                        <p>January 19, 1996</p>
+                    </div>
+                </article>
+                <article>
+                    <h4>Address:</h4>
+                    <div>
+                        <p>Binukawan, Bagac, Bataan</p>
+                    </div>
+                </article>
+                <article>
+                    <h4>Civil Status:</h4>
+                    <div>
+                        <p>Single</p>
+                    </div>
+                </article>
+                <article>
+                    <h4>Relgion:</h4>
+                    <div>
+                        <p>Born Again Christian</p>
+                    </div>
+                </article>
+            </div>
+            </div>
+            <div class="details-container">
+            <img src="./assets/hobbies.png" alt="Hobbies icon" class="icon">
+              <h2 class="personal-info">Hobbies</h2>
+            <div class="article-container">
+              <article class="article2">
+                  <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                  <div>
+                      <p>Programming</p>
+                  </div>
+              </article>
+              <article class="article2">
+                  <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                  <div>
+                      <p>Listening to music</p>
+                  </div>
+              </article >
+              <article class="article2">
+                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                <div>
+                    <p>Watching movies</p>
+                </div>
+            </article>
+              <article class="article2">
+                  <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                  <div>
+                      <p>Playing mobile and PC games</p>
+                  </div>
+              </article>
+              <article class="article2">
+                <img src="./assets/checkmark.png" alt="checkmark icon" class="icon">
+                <div>
+                    <p>Playing basketball</p>
+                </div>
+            </article>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#education'"
+      />
+    </section>
+
+    <section id="education">
+      <p class="section__text__p1">Here is My</p>
+      <h1 class="title">Education</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/megrad2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+      <div class="education-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+              <h2 class="education-sub-title">Higher Education</h2>
+              <div class="article-container">
+                <article>
+                  <div class="educ-details">
+                    <h3>Bataan Peninsula State University (Main Campus)</h3>
+                    <p>Bachelor of Science in Entertainment and 
+                      Multimedia Computing <i>major in Game Development</i></p>
+                  </div>
+                </article>
+              </div>
+          </div>
+          <div class="details-container">
+              <h2 class="education-sub-title">Secondary Education</h2>
+              <div class="article-container">
+                <article>
+                  <div class="educ-details">
+                    <h3>Bagac National High School (Parang)</h3>
+                  </div>
+                </article>
+              </div>
+          </div>
+          <div class="details-container">
+              <h2 class="education-sub-title">Primary Education</h2>
+              <div class="article-container">
+                <article>
+                  <div class="educ-details">
+                    <h3>Binukawan Elementary School</h3>
+                  </div>
+                </article>
+              </div>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Through my academic projects and internships, I have developed proficiency in Unreal Engine 5 game programming, Web development,
+               and Android Application development using Android Studio. I am passionate about coding and problem-solving, 
+               with a strong ability to learn and adapt quickly in a dynamic environment.</p>
+        </div>
+      </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/mework2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/workforce.png" alt="Production Staff icon" class="icon">
+            <h2 class="experience-sub-title">Production Staff</h2>
+            <p>1+ years</p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Work Under Pressure</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Work Efficiently</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Organized</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Creativity</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <img src="./assets/captain.png" alt="Room Attendant icon" class="icon">
+            <h2 class="experience-sub-title">Room Attendant</h2>
+            <p class="years">1+ years</p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hospitality</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hard Work</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Self-initiative</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Work with minimal supervision</h3>
+                </div>
+              </article>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon-link" onclick="location.href=
+            'https://www.linkedin.com/in/jovi-allen-pabiton-39bb382a9/'"
+          />
+          <p><a href="https://www.linkedin.com/in/jovi-allen-pabiton-39bb382a9/"
+          >LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>joviallenpabiton@gmail.com</p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/mobile.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>0994 943 0600</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jovi Allen Pabiton. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
