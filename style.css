@@ -131,6 +131,7 @@ a:hover {
 
 .hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
+  transition: .5s;
 }
 
 .hamburger-icon span:first-child {
@@ -507,10 +508,11 @@ footer p {
 .contact-info-container .highlight{
   background: left / 0% 100% no-repeat
   linear-gradient(#c1f5ee, #c1f5ee);
-  transition: background-size 500ms;
+  transition: background-size 1s;
 }
 
 .contact-info-container .highlight:hover{
   background: left / 100% 100% no-repeat
   linear-gradient(#c1f5ee, #c1f5ee);
 }
+
