@@ -153,6 +153,8 @@ a:hover {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  background-color: #3d3d3d;
+  border-radius: 50%;
 }
 
 .logo i{
@@ -171,14 +173,20 @@ a:hover {
 }
 
 .logo i{
-  animation-duration: 1.3s;
+  animation-duration: 1.5s;
   animation-name: spin;
   animation-timing-function: ease;
-  animation-delay: 500ms;
+  animation-delay: 1s;
+  /*
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+
+  animation: 3s spin ease-in-out infinite alternate;
+  */
 }
 
 .logo:hover{
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-name: xD;
   animation-timing-function: ease;
 }
@@ -192,7 +200,6 @@ a:hover {
     scale: 1.5;
     transform: rotate(0);
     border-radius: 15%;
-    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
     border: rgb(138, 138, 138) 0.5rem solid;
   }
 
